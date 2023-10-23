@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+.quantity-container{
+  padding:6px;
+  margin-left: 10px;
+  width:100px;
+}
+.ticket-container{
+  padding:6px;
+  width:160px;
+
+}
+.layout-container1{
+  display: flex;
+  /* justify-content: center;
+  flex-wrap: wrap; */
+  width:40%;
+ 
+}
+.layout-container{
+  display: flex;
+  /* justify-content: center;
+  flex-wrap: wrap; */
+  width:80%;
+  overflow-y: scroll;
+ 
+}
+ul{
+  width:100%;
+  display: flex;
+  flex-wrap: wrap;
+  /* align-items: center;
+  justify-content: center; */
+}
+.box1{
+  border:2px solid grey;
+  width:20px;
+  height:20px;
+  background-color: white;
+ 
+  margin-right:20px;
+}
+.box2{
+  border:2px solid grey;
+  width:20px;
+  height:20px;
+  background-color: grey;
+  margin-right: 15px;
+ 
+}
+.layout1{
+  display: flex;
+
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.box3{
+  border:2px solid grey;
+  width:20px;
+  height:20px;
+  background-color:green;
+  margin-right:15px;
+   
 }
+.bottom-container{
+  display: flex;
+ 
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  
+
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-container{
+  height:100vh;
   display: flex;
   flex-direction: column;
+}
+.conatiner1{
+  width:80%;
+}
+
+.con1{
+  display: flex;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content:space-between; 
+  width:100%;
+  text-align:right;
+ 
 }
-
-.App-link {
-  color: #61dafb;
+.key-heading{
+  font-family: "Roboto";
+  font-size: 20px;
 }
+.description{
+  font-size: 10px;
+  /* margin-left: 10px; */
+  text-align:left;
+  max-width: 150px;
+  
+}
+.proceed-btn{
+  background-color:red;
+  color:white;
+  padding:10px;
+  font-size: 10px;
+  display: flex;
+  
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+}
+.btn-container{
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  margin-top:30px;
+}
+.key-container{
+  display:flex;
+  flex-direction: column;
+  
 }
