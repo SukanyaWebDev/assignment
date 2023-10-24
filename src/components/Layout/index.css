@@ -9,8 +9,12 @@
     margin-right: 10px;
     padding:20px;
     background-color: aqua;
-    border:2px solid black;
+    border:solid;
+    border-color: black;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
 
+   
 }
 li{
     display: flex;

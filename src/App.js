@@ -2,9 +2,8 @@ import { Component } from 'react'
 import { v4 as uuidv4 } from 'uuid'
 import Header from './components/Header'
 import Layout from './components/Layout'
-// import SeatPicker from "react-seat-picker";
+import { BiSolidUpArrowSquare } from 'react-icons/bi'
 import './App.css'
-
 
 
 const imagesList = [
@@ -13,528 +12,1245 @@ const imagesList = [
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Standard",
+    seatType: "Standard",
   },
   {
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Primium",
+    seatType: "Premium",
   },
   {
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Standard",
+    seatType: "Standard",
   },
   {
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Primium",
+    seatType: "Premium",
   },
   {
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Standard",
+    seatType: "Standard",
   },
   {
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
+    seatType: "Premium",
+  },{
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Standard",
+  },
+  {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Standard",
+  },
+  {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Standard",
+  },
+  {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Standard",
+  },
+  {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Standard",
+  },
+  {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Standard",
+  },
+  {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Standard",
+  },
+  {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Standard",
+  },
+  {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Standard",
+  },
+  {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Standard",
+  },
+  {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Standard",
+  },
+  {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Standard",
+  },
+  {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Standard",
+  },
+  {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Standard",
+  },
+  {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Standard",
+  },
+  {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Standard",
+  },
+  {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Standard",
+  },
+  {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Standard",
+  },
+  {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Standard",
+  },
+  {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Standard",
+  },
+  {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Standard",
+  },
+  {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Standard",
+  },
+  {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Standard",
+  },
+  {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Standard",
+  },
+  {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Standard",
+  },
+  {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Standard",
+  },
+  {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Standard",
   },
   {
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-  }, {
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Standard",
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Primium",
+    seatType: "Standard",
   },
   {
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-  }, {
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Standard",
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Primium",
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Standard",
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Primium",
+    seatType: "Standard",
   },
   {
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    
-  }, {
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Primium",
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
+    seatType: "Standard",
   },
   {
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Primium",
-  }, {
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
+    seatType: "Standard",
   },
   {
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Primium",
+    seatType: "Premium",
+  },{
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Standard",
   },
   {
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-  }, {
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Primium",
+    seatType: "Standard",
   },
   {
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-  }, {
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Primium",
+    seatType: "Standard",
   },
   {
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
+    seatType: "Premium",
+  },{
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Primium",
+    seatType: "Standard",
   },
   {
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
+    seatType: "Premium",
+  },{
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Primium",
+    seatType: "Standard",
   },
   {
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
+    seatType: "Premium",
+  },{
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Primium",
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Primium",
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Primium",
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Primium",
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Primium",
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Primium",
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Standard",
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Primium",
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Standard",
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Primium",
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Standard",
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Primium",
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Standard",
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Primium",
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Standard",
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Primium",
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Standard",
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Primium",
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Standard",
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Primium",
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Standard",
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Primium",
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Standard",
+    seatType: "Standard",
   },
   {
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Primium",
+    seatType: "Premium",
+  },{
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Standard",
+    seatType: "Standard",
   },
   {
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Primium",
+    seatType: "Premium",
+  },{
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Standard",
+    seatType: "Standard",
   },
   {
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Primium",
+    seatType: "Premium",
+  },{
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Standard",
+    seatType: "Standard",
   },
   {
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Primium",
+    seatType: "Premium",
+  },{
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Standard",
+    seatType: "Standard",
   },
   {
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Primium",
+    seatType: "Premium",
+  },{
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Standard",
+    seatType: "Standard",
   },
   {
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Primium",
+    seatType: "Premium",
+  },{
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Standard",
+    seatType: "Standard",
   },
   {
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Primium",
+    seatType: "Premium",
+  },{
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Standard",
   },
   {
+    id: uuidv4(),
+    imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
+    isBooked: false,
+    isClicked: false,
+    seatType: "Premium",
+  },{
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Standard",
+    seatType: "Standard",
   },
   {
     id: uuidv4(),
     imageUrl: "https://res.cloudinary.com/dxorhiaeo/image/upload/v1697970564/1683809_tkfl4h.png",
     isBooked: false,
     isClicked: false,
-    seatType:"Premium",
+    seatType: "Premium",
   },
-  
-
 ]
 class App extends Component {
   state = {
     intialArray: imagesList,
     quantity: 1,
-    selectType:"Standard"
+    selectType: "Standard"
   }
 
   onStatusChange = (id) => {
@@ -550,21 +1266,20 @@ class App extends Component {
 
     })
 
-    // console.log(newArray)
-    // console.log(id)
+    
     this.setState({ intialArray: newArray })
 
   }
 
-  seatChange = (event)=>{
-    this.setState({selectType:event.target.value})
+  seatChange = (event) => {
+    this.setState({ selectType: event.target.value })
 
   }
 
   changeValue = event => {
     const { quantity } = this.state
     this.setState({ quantity: parseInt(event.target.value) })
-    // console.log(typeof (event.target.value))
+    
   }
 
   onProceed = () => {
@@ -576,12 +1291,12 @@ class App extends Component {
       return { ...item }
     })
     this.setState({ intialArray: array })
-    // console.log("hi")
+   
 
   }
 
   render() {
-    const { intialArray, quantity,selectType } = this.state
+    const { intialArray, quantity, selectType } = this.state
     console.log(quantity)
     let count = 0
     const x = intialArray.map(eachItem => {
@@ -602,29 +1317,21 @@ class App extends Component {
     return (
       <div>
         <Header />
-        <div>
-          <select className='ticket-container' onChange = {this.seatChange} value = {selectType}>
-            
-            <option value= "Standard">Standard</option>
-            <option value = "Primium">Primium</option>
+
+        <div className='top-container'>
+          <select className='ticket-container' onChange={this.seatChange} value={selectType}>
+
+            <option value="Standard">Standard</option>
+            <option value="Premium">Premium</option>
           </select>
-          <select id="su" className='quantity-container' onChange={this.changeValue} value={quantity}>
+          <select className='quantity-container' onChange={this.changeValue} value={quantity}>
             <option value="1">1</option>
             <option value="2">2</option>
             <option value="3">3</option>
             <option value="4">4</option>
           </select>
-          {/* 
-<select onChange={this.changeValue} value={quantity}>
-          {imagesList.map(each => (
-            <option key={each.id} value={each.id}>
-              {each.capitalDisplayText}
-            </option>
-          ))}
-        </select> */}
-
-
         </div>
+
         <div className='bottom-container'>
           <div className='layout-container'>
             <ul>
@@ -633,6 +1340,10 @@ class App extends Component {
               ))}
 
             </ul>
+            <div className='btn-container' >
+              {a ? (<button type="button" className='proceed-btn ' onClick={this.onProceed}>Proceed</button>) : (null)}
+
+            </div>
           </div>
 
           <div className="key-container">
@@ -642,7 +1353,7 @@ class App extends Component {
               <div className="box1"></div>
               <p className='description'>Available</p>
             </div>
-            
+
             <div className="con1">
               <div className="box2"></div>
               <p className='description'>Unavailable</p>
@@ -654,10 +1365,10 @@ class App extends Component {
           </div>
         </div>
 
-        <div className='btn-container' >
-          {a ? (<button type="button" className='proceed-btn ' onClick={this.onProceed}>Proceed</button>) : (null)}
 
-        </div>
+        <BiSolidUpArrowSquare className="up-arrow" />
+        <h1 className="heading">Way to see</h1>
+        
 
 
       </div >

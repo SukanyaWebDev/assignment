@@ -6,22 +6,59 @@
 .ticket-container{
   padding:6px;
   width:160px;
-
+  padding-left: 20px;
+  margin-left: 40px;
+ 
+}
+.heading{
+  margin-left:380px;
+  margin-top:0px;
 }
 .layout-container1{
   display: flex;
   /* justify-content: center;
   flex-wrap: wrap; */
   width:40%;
+  
  
+}
+.btn-container{
+  margin-top: 40px;
+}
+.way-booking-con{
+  background-color: aqua;
+  width:60%;
+  height:30px;
+  padding-left: 30px;
+  margin-left: 40px;
+  /* border-style: 1px solid balck;
+  border-top-right-radius:10px;
+  border-top-left-radius:10px; */
+
+}
+/* .top-container{
+  border-style: solid;
+  border-bottom: none;
+
+} */
+.up-arrow{
+  width:60px;
+  height:60px;
+  margin-left:100px;
+  margin-left:430px;
+  margin-bottom: 0px;
 }
 .layout-container{
   display: flex;
   /* justify-content: center;
   flex-wrap: wrap; */
-  width:80%;
+  width:70%;
   overflow-y: scroll;
- 
+  margin-top:30px;
+
+  /* border-style: solid;
+  border-top:none;
+  */
 }
 ul{
   width:100%;
@@ -88,10 +125,11 @@ ul{
   font-size: 20px;
 }
 .description{
-  font-size: 10px;
+  font-size: 20px;
   /* margin-left: 10px; */
   text-align:left;
   max-width: 150px;
+  font-family:"Roboto";
   
 }
 .proceed-btn{
@@ -100,17 +138,20 @@ ul{
   padding:10px;
   font-size: 10px;
   display: flex;
+  border-width: 0px;
+  border-radius: 5px;
   
 
 }
 .btn-container{
   display: flex;
   align-items: flex-end;
-  justify-content: flex-end;
+  justify-content:center;
   margin-top:30px;
 }
 .key-container{
   display:flex;
   flex-direction: column;
+  margin-left: 30px;
   
 }
